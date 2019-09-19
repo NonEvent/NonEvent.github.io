@@ -125,8 +125,19 @@ div {
     #sidebar .widget .tagcloud {
       margin-top: 10px; }
       #sidebar .widget .tagcloud a {
-        line-height: 1.5;
-        padding: 5px; }
+        line-height: 1;
+        display: inline-block;
+        border: 1px solid rgba(204, 204, 204, 0.8);
+        border-radius: 999em;
+        padding: 4px;
+        /*侧边栏文字原始样式*/
+        /*line-height: 1.5;
+                padding: 5px;*/ }
+        #sidebar .widget .tagcloud a:hover {
+          color: #fff;
+          border: 1px solid #fd7225;
+          /*标签页鼠标点击颜色修改*/
+          background: #fd7225; }
     #sidebar .widget ul {
       list-style: none;
       padding: 0; }
@@ -1473,7 +1484,7 @@ p.search-result {
 em.search-keyword {
   font-weight: bold;
   font-style: normal;
-  color: #01579f; }
+  color: #fd7225; }
 
 /* Disqus Button */
 .disqus_click_btn {
@@ -1509,3 +1520,53 @@ em.search-keyword {
   list-style: none; }
   .post-copyright li {
     margin: 8px 0; }
+
+#sidebar-toc {
+  padding-left: 15px;
+  margin-top: 40px;
+  padding-bottom: 20px;
+  word-wrap: break-word; }
+
+.stoc-article {
+  position: absolute;
+  padding: 1em 1em 0 1em;
+  margin-left: 1em;
+  border-left: rgba(88, 88, 88, 0.1) 1px solid; }
+
+.stoc-title {
+  font-size: 150%; }
+
+#sidebar-stoc {
+  width: inherit;
+  line-height: 1em;
+  font-size: 0.9em;
+  float: left;
+  overflow: auto; }
+
+.stoc-fixed {
+  position: fixed;
+  top: 60px;
+  margin-top: 0;
+  max-height: 81%;
+  overflow: hidden;
+  z-index: 1; }
+
+.toc-nav {
+  padding: 0.7em 0.7em 0 0; }
+
+#stoc {
+  line-height: 1em;
+  font-weight: 700; }
+  #stoc .active {
+    color: #0085a1;
+    border-radius: 4px;
+    background-color: #F5F5F5; }
+  #stoc .toc {
+    padding: 0;
+    margin: 0.5em;
+    line-height: 1.8em; }
+    #stoc .toc li {
+      list-style-type: none; }
+  #stoc .toc-child {
+    margin-left: 1em;
+    padding-left: 0; }
