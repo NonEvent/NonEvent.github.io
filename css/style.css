@@ -69,7 +69,7 @@ div {
       overflow: hidden; }
     #header .site-name #logo {
       /*修改网站标题*/
-      font: 700 45px/1.12 "EB Garamond", serif, "Times New Roman", Georgia, Times, sans-serif;
+      font: 700 45px/1.12 "EB+Garamond", serif, "Times New Roman", Georgia, Times, sans-serif;
       color: #555; }
       #header .site-name #logo span, #header .site-name #logo:hover {
         color: #777; }
@@ -246,6 +246,8 @@ div {
     .post .post-content .tagcloud {
       margin: 0 0 30px 0; }
       .post .post-content .tagcloud a {
+        font-size: 15px;
+        /*标签页圆角矩形的大小*/
         padding: 0px 5px;
         margin: 3px;
         display: inline-block;
